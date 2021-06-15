@@ -1,0 +1,75 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - eprayersaspnet</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+<body>
+    <header class="header">
+        <div class="container container_menu">
+            <a href="#"> <img src="C:\Users\caio0\OneDrive\Documentos\E-players_html\assets\logo.svg" alt=""></a>
+            <nav class="box_links_header">
+                <a href="#" class="links">Início</a>
+                <a href="#horarios" class="links">Horários</a>
+                <a href="#" class="links">Campeonatos</a>
+                <a href="#" class="links">Resultados</a>
+                <a href="#noticias" class="links">Noticias</a>
+            </nav>
+        </div>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+        <footer class="footer">
+        <div class="container">
+            <div class="links_footer">
+                <div class="conteudo_footer">
+                    <span class="spanzinho">Links úteis</span>
+                    <a href="#" class="links_footer">Regras de utilização</a>
+                    <a href="#" class="links_footer">Suporte</a>
+                    <a href="#" class="links_footer">Central de ajuda</a>
+                    <a href="#" class="links_footer">Contato</a>
+                </div>
+                <div class="conteudo_footer">
+                    <span class="spanzinho">Paginas</span>
+                    <a href="#" class="links_footer">Inicio</a>
+                    <a href="#horarios" class="links_footer">Horários</a>
+                    <a href="#" class="links_footer">Campeonatos</a>
+                    <a href="#" class="links_footer">Resultados</a>
+                    <a href="#noticias" class="links_footer">Noticias</a>
+                </div>
+                <img src="C:\Users\caio0\OneDrive\Documentos\E-players_html\assets\logo.svg" alt="">
+                <div class="direita">
+                    <div class="Newsletter">
+                        <span>Faça parte do nosso clan, assine nossa newsletter!</span>
+                        <div class="inputs">
+                            <div>
+                                <input class="input" type="text" placeholder="E-mail">
+                            </div>
+                            <div class="cadastrar">
+                                <button class="cadastro">Cadastrar</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="redes_sociais">
+                        <span>Siga-nos em:</span>
+                        <a href="https://www.youtube.com/playlist?list=PLQc2LfH6uOhLcY9jQchAdVLGtW_8WF_Nz"><img class="rede_social" src="C:\Users\caio0\OneDrive\Documentos\E-players_html\assets\youtube.png" alt=""></a>
+                        <a href="https://www.instagram.com/senai_info/?hl=pt-br"><img class="rede_social" src="C:\Users\caio0\OneDrive\Documentos\E-players_html\assets\instagram.png" alt=""></a>
+                        <a href="https://pt-br.facebook.com/senaiinformatica/"><img class="rede_social" src="C:\Users\caio0\OneDrive\Documentos\E-players_html\assets\facebook.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

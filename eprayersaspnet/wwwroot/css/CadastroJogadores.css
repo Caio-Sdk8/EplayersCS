@@ -1,0 +1,239 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
+.container {
+    width: 1200px;
+    display: flex;
+}
+
+.header {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 85px;
+    align-items: center;
+}
+
+.container_menu {
+    display: flex;
+    justify-content: space-between;
+}
+
+.links {
+    color: #ffffff;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 22px;
+}
+
+.box_links_header {
+    display: flex;
+    justify-content: space-between;
+    width: 650px;
+}
+
+.banner {
+    background-image: url(../E-players_html/assets/Rectangle_5.png);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 237px;
+}
+
+.banner span {
+    font-family: 'Titillium Web', sans-serif;
+    color: white;
+    font-size: 40px;
+}
+
+body {
+    background-color: #172226;
+}
+
+.formulario {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    height: 800px;
+}
+
+.container_inscrição {
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background: linear-gradient(180deg, #000000 0%, rgba(83, 83, 83, 0.577381) 25%, rgba(196, 196, 196, 0) 87.5%);
+    box-shadow: 1px 1px 20px 4px #000000;
+    width: 770px;
+    height: 629px;
+    align-items: center;
+}
+
+.bloco_cima {
+    height: 158px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.campos_ins {
+    display: flex;
+    flex-direction: column;
+}
+
+.bloco_ins {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    background: #ABABAB;
+    width: 575px;
+}
+
+.btn_cadastro {
+    background: #C31616;
+    border-radius: 10px;
+    width: 257px;
+    height: 40px;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-size: 19px;
+}
+
+.tabelinha {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+}
+
+.sec_tab {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+table {
+    border: 2px solid white;
+    width: 770px;
+    border-collapse: collapse;
+    justify-items: normal;
+}
+
+.titulo {
+    border-bottom: 2px solid white;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-size: 20px;
+    background-color: black;
+}
+
+.nome_tabela {
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-weight: 700;
+    font-size: 40px;
+}
+
+td {
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+
+.footer {
+    background-color: black;
+    width: 100%;
+    height: 217px;
+    display: flex;
+    justify-content: center;
+}
+
+.links_footer {
+    text-decoration: none;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+.spanzinho {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    width: 140px;
+}
+
+.conteudo_footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 279px;
+    align-content: space-between;
+}
+
+.direita {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.Newsletter {
+    display: flex;
+    width: 343px;
+    flex-direction: column;
+}
+
+.Newsletter span {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+}
+
+.inputs {
+    display: flex;
+}
+
+.input {
+    padding: 3px;
+    width: 258px;
+}
+
+.cadastro {
+    text-transform: uppercase;
+    color: white;
+    background-color: #001F70;
+    font-family: 'Roboto', sans-serif;
+    padding: 3px;
+    font-size: 14px;
+}
+
+.redes_sociais {
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.rede_social {
+    width: 47px;
+    height: 47px;
+}
+
+.links_footer img {
+    display: flex;
+    justify-content: center;
+}

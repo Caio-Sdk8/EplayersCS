@@ -39,7 +39,7 @@
 }
 
 .banner {
-    background-image: url(../E-players_html/assets/Rectangle_5.png);
+    background-image: url(~/assets/Rectangle_5.png);
     display: flex;
     align-items: center;
     justify-content: center;

@@ -7,7 +7,8 @@ namespace eprayersaspnet.Models
 {
     public class Equipe : EplayersBase, IEquipe
     {
-        public int IdEquipe { get; set; }
+        public int i = 0;
+        public string IdEquipe { get; set; }
 
         public string NomeEquipe { get; set; }
         
@@ -37,7 +38,7 @@ namespace eprayersaspnet.Models
             File.AppendAllLines(CAMINHO, linha);
         }
 
-        public void Deletar(int id)
+        public void Deletar(string id)
         {
             List<string> linhas = LerTodasLinhasCSV(CAMINHO);
             linhas.RemoveAll(x => x.Split(";")[0] == id.ToString());
@@ -55,7 +56,7 @@ namespace eprayersaspnet.Models
 
                 Equipe equipe = new Equipe();
 
-                equipe.IdEquipe = Int32.Parse(linha[0]);
+                equipe.IdEquipe = linha[0];
                 equipe.NomeEquipe = linha[1];
                 equipe.LogoTime = linha[2];
 

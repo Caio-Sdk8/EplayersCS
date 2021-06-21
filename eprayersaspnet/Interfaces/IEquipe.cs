@@ -11,6 +11,6 @@ namespace eprayersaspnet.Interfaces
 
         void Alterar(Equipe e);
 
-        void Deletar(int id);
+        void Deletar(string id);
     }
 }

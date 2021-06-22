@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - eprayersaspnet</title>
     <link rel="stylesheet" href="~/css/site.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
 </head>
 
 <body>
@@ -13,11 +14,23 @@
         <div class="container container_menu">
             <a href="#"> <img src="~/assets/logo.svg" alt=""></a>
             <nav class="box_links_header">
-                <a asp-area="" asp-controller="Home" asp-action="E-players" class="links">Início</a>
+                <a asp-area="" asp-controller="Home" asp-action="E-players" class="links">Início</a></li>
                 <a href="#horarios" class="links">Horários</a>
                 <a href="#" class="links">Campeonatos</a>
                 <a href="#" class="links">Resultados</a>
                 <a href="#noticias" class="links">Noticias</a>
+
+                @if (ViewBag.UserName != null)
+                {
+                   <a>
+                       Olá @ViewBag.UserName
+                   </a> 
+                }
+                else
+                {
+                    <a a asp-area="" asp-controller="Login" asp-action="Index"><i
+                    class="fas fa-user-circle"></i></a>
+                }
             </nav>
         </div>
     </header>
@@ -58,8 +71,7 @@
                     <div class="redes_sociais">
                         <span>Siga-nos em:</span>
                         <a href="https://www.youtube.com/playlist?list=PLQc2LfH6uOhLcY9jQchAdVLGtW_8WF_Nz"><img
-                                class="rede_social"
-                                src="~/assets/youtube.png" alt=""></a>
+                                class="rede_social" src="~/assets/youtube.png" alt=""></a>
                         <a href="https://www.instagram.com/senai_info/?hl=pt-br"><img class="rede_social"
                                 src="~/assets/instagram.png" alt=""></a>
                         <a href="https://pt-br.facebook.com/senaiinformatica/"><img class="rede_social"

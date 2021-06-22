@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using eprayersaspnet.Models;
+using Microsoft.AspNetCore.Http;
 
 namespace eprayersaspnet.Controllers
 {
@@ -20,6 +21,7 @@ namespace eprayersaspnet.Controllers
 
         public IActionResult Index()
         {
+            ViewBag.Username = HttpContext.Session.GetString("_UserName");
             return View();
         }
 

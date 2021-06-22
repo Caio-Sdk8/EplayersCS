@@ -1,30 +1,35 @@
+@model Jogador
+@{
+    ViewData["Title"] = "Jogadores";
+}
+
 <main>
     <section class="banner">
         <span>Cadastro de Jogador</span>
     </section>
-    <section class="formulario">
+    <form class="formulario" action='@Url.Action("Cadastrar")' enctype="multipart/form-data">
         <div class="container_inscrição">
             <div class="bloco_ins bloco_cima">
                 <div class="campos_ins">
-                    <label for="nome_player">Nome do jogador</label>
-                    <input type="text" name="nome_player">
+                    <label for="NomeJogador">Nome do jogador</label>
+                    <input type="text" name="NomeJogador">
                 </div>
                 <div class="campos_ins">
                     <label for="Email">E-mail</label>
                     <input type="text" name="Email">
                 </div>
                 <div class="campos_ins">
-                    <label for="senha">Senha</label>
-                    <input type="password" name="senha">
+                    <label for="Senha">Senha</label>
+                    <input type="password" name="Senha">
                 </div>
             </div>
             <div class="bloco_ins">
-                <label for="time">Senha</label>
+                <label for="time"></label>
                 <input type="text" name="time">
             </div>
             <button class="btn_cadastro">Cadastrar</button>
         </div>
-    </section>
+    </form>
     <section class="tabelinha">
         <div class="container sec_tab">
             <span class="nome_tabela">Lista de jogadores</span>

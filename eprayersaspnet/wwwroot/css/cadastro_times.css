@@ -11,6 +11,15 @@
     display: flex;
 }
 
+.tabela{
+    align-items: center;
+}
+
+.fa-trash{
+    color: white;
+    width: 10px;
+}
+
 .btn_menu i {
     display: none;
     color: white;

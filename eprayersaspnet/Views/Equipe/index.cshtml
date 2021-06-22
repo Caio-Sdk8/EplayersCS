@@ -6,10 +6,10 @@
 <!DOCTYPE html>
 <html lang="pt-br">
     <link rel="stylesheet" href="~/css/cadastro_times.css" />
-
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
 
 <section class="banner">
-    <span>Cadastro de Jogador</span>
+    <span>Cadastro de Times</span>
 </section>
 <form method="POST" action='@Url.Action("Cadastrar")' enctype="multipart/form-data">
     <section class="cad_team">
@@ -29,10 +29,11 @@
 <section class="tabelinha">
     <div class="container sec_tab">
         <span class="nome_tabela">Lista de Equipes</span>
-        <table>
+        <table class="table table-reponsive table-striped">
             <thead class="tabela_tt">
                 <th class="titulo nome">Nome da Equipe</th>
                 <th class="titulo time">Logo da Equipe</th>
+                <th class="titulo time">Excluir a Equipe</th>
             </thead>
             <tbody>
                 @foreach (Equipe equipe in ViewBag.Equipes)
@@ -40,7 +41,7 @@
                    <tr>
                        <td>@equipe.NomeEquipe</td>
                        <td><img src="/img/Equipes/@equipe.LogoTime" alt="Imagem da equipe @equipe.NomeEquipe" width="50px"></td>
-                       <td><a asp-area="" asp-controller="Equipe" asp-action="Excluir" asp-route-id="@equipe.IdEquipe">Excluir</a></td>
+                       <td><a asp-area="" asp-controller="Equipe" asp-action="Excluir" asp-route-id="@equipe.IdEquipe"><i class="fas fa-trash"></i></a></td>
                    </tr>
                 }
             </tbody>

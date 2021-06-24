@@ -3,50 +3,53 @@
     ViewData["Title"] = "Jogadores";
 }
 
-<main>
-    <section class="banner">
-        <span>Cadastro de Jogador</span>
-    </section>
-    <form class="formulario" action='@Url.Action("Cadastrar")' enctype="multipart/form-data">
-        <div class="container_inscrição">
-            <div class="bloco_ins bloco_cima">
-                <div class="campos_ins">
-                    <label for="NomeJogador">Nome do jogador</label>
-                    <input type="text" name="NomeJogador">
-                </div>
-                <div class="campos_ins">
-                    <label for="Email">E-mail</label>
-                    <input type="text" name="Email">
-                </div>
-                <div class="campos_ins">
-                    <label for="Senha">Senha</label>
-                    <input type="password" name="Senha">
-                </div>
+<link rel="stylesheet" href="~/css/CadastroJogadores.css" />
+<section class="banner">
+    <span>Cadastro de Jogador</span>
+</section>
+<form method="POST" class="formulario" action='@Url.Action("Cadastrar")' enctype="multipart/form-data">
+    <div class="container_inscrição">
+        <div class="bloco_ins bloco_cima">
+            <div class="campos_ins">
+                <label for="NomeJogador">Nome do jogador</label>
+                <input type="text" name="NomeJogador">
             </div>
-            <div class="bloco_ins">
-                <label for="time"></label>
-                <input type="text" name="time">
+            <div class="campos_ins">
+                <label for="Email">E-mail</label>
+                <input type="text" name="Email">
             </div>
-            <button class="btn_cadastro">Cadastrar</button>
+            <div class="campos_ins">
+                <label for="Senha">Senha</label>
+                <input type="password" name="Senha">
+            </div>
+            <div class="campos_ins">
+                <label for="IdEquipePlayer">Digite o id do seu time</label>
+                <input type="text" name="IdEquipePlayer">
+            </div>
         </div>
-    </form>
-    <section class="tabelinha">
-        <div class="container sec_tab">
-            <span class="nome_tabela">Lista de jogadores</span>
-            <table>
-                <tr class="tabela_tt">
-                    <th class="titulo nome">Nome do jogador</th>
-                    <th class="titulo time">Equipe</th>
-                </tr>
-                <tr>
-                    <td>Thiago</td>
-                    <td>Senai Cytechs</td>
-                </tr>
-                <tr>
-                    <td>Odirlei</td>
-                    <td>Senai Cytechs</td>
-                </tr>
-            </table>
-        </div>
-    </section>
-</main>
+        <button class="btn_cadastro">Cadastrar</button>
+    </div>
+</form>
+<section class="tabelinha">
+    <div class="container sec_tab">
+        <span class="nome_tabela">Lista de jogadores</span>
+        <table>
+            <thead class="tabela_tt">
+                <th class="titulo nome">Nome do Jogador</th>
+                <th class="titulo time">Equipe</th>
+                <th class="titulo time">Excluir o Jogador</th>
+            </thead>
+            <tbody>
+                @foreach (Jogador jogador in ViewBag.LerJogadores)
+                {
+                    <tr>
+                        <td>@jogador.NomeJogador</td>
+                        <td></td>
+                        <td><a asp-area="" asp-controller="Jogador" asp-action="Excluir" asp-route-id="@jogador.IdJogador"><i
+                                class="fas fa-trash"></i></a></td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</section>

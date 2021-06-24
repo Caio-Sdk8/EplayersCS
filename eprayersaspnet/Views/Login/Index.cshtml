@@ -1,15 +1,20 @@
 @{
     ViewData["Title"] = "Login";
 }
-
+<link rel="stylesheet" href="~/css/cadastro_times.css" />
 <form method="POST" action='@Url.Action("Logar")'>
-    <div>
-        <label for="">Email</label>
-        <input type="text" name="Email">
-    </div>
-    <div>
-        <label for="">Senha</label>
-        <input type="text" name="Senha">
-    </div>
-    <div class="erro">@TempData.Peek("Mensagem")</div>
+    <section class="cad_team">
+        <div class="container_inscrição">
+            <div class="inputs_1">
+                <label for="">Email</label>
+                <input class="iprut" type="text" name="Email">
+            </div>
+            <div class="inputs_1">
+                <label for="">Senha</label>
+                <input class="iprut" type="text" name="Senha">
+            </div>
+            <button type="submit" class="btn_cadastro">Logar</button>
+            <div class="erro">@TempData.Peek("Mensagem")</div>
+        </div>
+    </section>
 </form>

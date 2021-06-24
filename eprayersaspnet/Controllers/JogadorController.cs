@@ -8,6 +8,7 @@ namespace eprayersaspnet.Controllers
     public class JogadorController : Controller
     {
         Jogador jogadormodel = new Jogador();
+        [Route("Listar")]
         public IActionResult Index()
         {
             ViewBag.LerJogadores = jogadormodel.LerTodas();
@@ -28,7 +29,7 @@ namespace eprayersaspnet.Controllers
             jogadormodel.Criar(novojogador);
             ViewBag.LerJogadores = jogadormodel.LerTodas();
 
-            return LocalRedirect("~/Jogador/Listar");
+            return LocalRedirect("~/Jogadores/Listar");
         }
     }
 }

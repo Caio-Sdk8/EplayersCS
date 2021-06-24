@@ -1,0 +1,441 @@
+﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
+
+.fa-user-circle::before{
+    color: white;
+    font-size: 50px;
+}
+.container {
+    width: 1200px;
+    display: flex;
+}
+
+.header {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 85px;
+    align-items: center;
+}
+
+.container_menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.links {
+    color: #ffffff;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 22px;
+}
+
+.box_links_header {
+    display: flex;
+    justify-content: space-between;
+    width: 650px;
+    align-items: center;
+}
+
+.container_banner {
+    height: 620px;
+    width: 100%;
+    background: linear-gradient(90deg, #3791D2 0%, #000000 100%);
+    display: flex;
+    justify-content: space-between;
+}
+
+.info_banner {
+    font-family: 'Titillium Web', sans-serif;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-size: 80px;
+    font-weight: 700;
+}
+
+.info_banner p {
+    font-size: 35px;
+}
+
+.btn_inscreverse {
+    background: #DE2C2C;
+    border-radius: 20px;
+    width: 300px;
+    height: 60px;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 30px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.jogos {
+    display: flex;
+    justify-content: center;
+    background-color: black;
+}
+
+.container_jogos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cod {
+    width: 184px;
+    height: 59px;
+}
+
+.fifa {
+    width: 131px;
+    height: 59px;
+}
+
+.valorant {
+    width: 203px;
+    height: 30px;
+}
+
+.cs {
+    width: 272px;
+    height: 78px;
+}
+
+.lol {
+    width: 186px;
+    height: 70px;
+}
+
+.como_participar {
+    width: 100%;
+    height: 624px;
+    background-image: url(../assets/Rectangle.png);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tittle_participar {
+    font-family: 'Titillium Web', sans-serif;
+    color: white;
+    font-weight: bold;
+    font-size: 50px;
+    height: 81px;
+    width: 565px;
+    line-height: 76px;
+}
+
+.lorem {
+    font-family: 'Titillium Web', sans-serif;
+    color: white;
+}
+
+.texto_participar {
+    width: 565px;
+    height: 475px;
+    text-align: justify;
+    transform: skewY(4deg);
+}
+
+.ligas {
+    transform: skewY(-4deg);
+    background-color: black;
+    width: 100%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ligas img {
+    width: 820px;
+}
+
+.conteudo_info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.partidas {
+    width: 100%;
+    height: 101px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    align-items: center;
+}
+
+.tudo {
+    align-items: center;
+    display: flex;
+}
+
+.aovivo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 526px;
+}
+
+.astraliquid {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 295px;
+}
+
+.liquid {
+    display: flex;
+    align-items: center;
+}
+
+.astralis {
+    display: flex;
+    align-items: center;
+}
+
+hr {
+    display: flex;
+    color: white;
+    height: 55px;
+    margin: 0 20px;
+}
+
+.embreve {
+    display: flex;
+    align-items: center;
+    width: 627px;
+    justify-content: space-between;
+}
+
+.loudpain {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 330px;
+}
+
+.loud {
+    display: flex;
+    align-items: center;
+}
+
+.pain {
+    display: flex;
+    align-items: center;
+}
+
+#spans {
+    text-transform: uppercase;
+}
+
+.noticiajgs {
+    background: #172226;
+    height: 1017px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.articles {
+    height: 369px;
+    width: 247px;
+    border: 2px solid #000000;
+    background: linear-gradient(0deg, #000000 0%, rgba(0, 0, 0, 0.29) 55.01%);
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    justify-content: space-between;
+    text-align: justify;
+}
+
+.articles img {
+    width: 243px;
+    height: 165px;
+}
+
+.Noticias {
+    width: 797px;
+    height: 847px;
+}
+
+#noticia {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
+}
+
+.article_um {
+    width: 797px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 35px;
+    margin-top: 10px;
+}
+
+.article_dois {
+    width: 797px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.jogostabela {
+    border: 3px solid;
+    border-image-source: linear-gradient(180deg, #2B6FA1 0%, #000000 100%);
+    background: linear-gradient(0deg, #2B6FA1 0%, rgba(0, 0, 0, 0.29) 100%);
+    width: 305px;
+    height: 765px;
+    margin-top: 50px;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.aovivo_horario {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+.embreve_horarios {
+    display: flex;
+    flex-direction: column;
+}
+
+.logo_time {
+    width: 53px;
+}
+
+.container_sec {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer {
+    background-color: black;
+    width: 100%;
+    height: 217px;
+    display: flex;
+    justify-content: center;
+}
+
+.links_footer {
+    text-decoration: none;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+.spanzinho {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    width: 140px;
+}
+
+.conteudo_footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 279px;
+    align-content: space-between;
+}
+
+.direita {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.Newsletter {
+    display: flex;
+    width: 343px;
+    flex-direction: column;
+}
+
+.Newsletter span {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+}
+
+.inputs {
+    display: flex;
+}
+
+.input {
+    padding: 3px;
+    width: 258px;
+}
+
+.cadastro {
+    text-transform: uppercase;
+    color: white;
+    background-color: #001F70;
+    font-family: 'Roboto', sans-serif;
+    padding: 3px;
+    font-size: 14px;
+}
+
+.redes_sociais {
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.rede_social {
+    width: 47px;
+    height: 47px;
+}
+
+.links_footer img {
+    display: flex;
+    justify-content: center;
+}
+
+.astraliquid_horario {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 263px;
+}
+
+.loudpain_horarios {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 263px;
+}
